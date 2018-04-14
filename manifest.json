@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "Borderify",
+  "version": "1.0",
+
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+     "matches": ["<all_urls>"],
+      "js": ["jquery-3.2.1.min.js", "jszip.min.js", "FileSaver.js", "myexcel.js", "roster.js"]
+    }
+  ],
+  "background":
+  {
+    "scripts": ["jquery-3.2.1.min.js", "jszip.min.js", "FileSaver.js", "myexcel.js"]
+  }
+  }
